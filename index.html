@@ -100,8 +100,6 @@ a{color:inherit}
 .tex.nodm::before{display:none}
 .sec::after,.prog::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(100% 40% at 50% 100%,rgba(226,204,160,.3),rgba(226,204,160,0) 75%)}
 .sec>*,.prog>*{position:relative;z-index:1}
-.foot{position:relative;background:var(--bg)}
-.foot>*{position:relative;z-index:1}
 
 /* a picture that is its own frame: full-bleed, fading into the page */
 .ph{position:absolute;left:0;right:0;top:0;height:42%;-webkit-mask-image:linear-gradient(#000 45%,rgba(0,0,0,.5) 72%,transparent 96%);mask-image:linear-gradient(#000 45%,rgba(0,0,0,.5) 72%,transparent 96%)}
@@ -185,7 +183,7 @@ section[aria-label="Məkan"] .sec-in{padding-bottom:46cqw}
 /* dress code */
 .dress-txt{margin:2.6cqw auto 0;max-width:66cqw;font:500 4.3cqw/1.5 var(--serif);color:var(--muted);text-wrap:balance}
 
-/* thanks + footer */
+/* thanks */
 .thx{margin:4cqw 0 0;font:500 5.1cqw/1.5 var(--serif);color:var(--ink);text-wrap:balance}
 .sign{margin:6cqw 0 0;font:400 9.6cqw/1.15 var(--display);white-space:nowrap;display:grid;justify-items:center}
 .sign i{font:italic 500 4.4cqw/1.5 var(--serif);color:var(--muted);letter-spacing:.12em;padding-left:.12em}
@@ -193,12 +191,6 @@ section[aria-label="Məkan"] .sec-in{padding-bottom:46cqw}
 .sign .foil:nth-child(3){transform:translateX(-0.323em)}
 .sign .foil:nth-child(4){transform:translateX(-0.187em)}
 .amp{font:italic 500 .55em var(--serif);margin:0 .14em;position:relative;top:-.1em}
-.foot{padding:30px 16px 54px;text-align:center;background:var(--bg);display:flex;flex-direction:column;align-items:center;gap:10px}
-.foot::before{content:"";width:56px;height:1px;background:var(--line)}
-.mono .foil{display:inline-block;padding:.5em 1.2em;margin:-.5em -1.2em}
-.mono .amp{font:italic 500 .74em var(--serif);margin:0 .16em;position:static;vertical-align:.06em;color:#9C7A2E;-webkit-text-fill-color:#9C7A2E}
-.mono{font:400 38px/1.2 var(--display);white-space:nowrap}
-.foot>span{font:600 13px/1 var(--serif);letter-spacing:.34em;padding-left:.34em;color:var(--champ-deep);font-variant-numeric:lining-nums}
 
 .mus{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.92);color:var(--champ-deep);display:none;place-items:center;cursor:pointer;box-shadow:0 4px 16px rgba(60,40,20,.16);padding:0;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .mus.show{display:grid}
@@ -365,12 +357,6 @@ section[aria-label="Məkan"] .sec-in{padding-bottom:46cqw}
       <p class="sign"><span class="foil">Hüseynovlar</span><i>və</i><span class="foil">İsmayılovlar</span><span class="foil">ailəsi</span></p>
     </div>
   </section>
-  <div class="sep" aria-hidden="true"><i></i></div>
-
-  <footer class="foot">
-    <div class="mono" aria-label="Z &amp; N"><span class="foil">Z<span class="amp">&amp;</span>N</span></div>
-    <span>27.12.2026</span>
-  </footer>
 </main>
 <div class="scd" id="scd" aria-hidden="true"><span>aşağı sürüşdürün</span>
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
